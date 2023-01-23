@@ -1,4 +1,4 @@
-# FiguresApp
+# Figures
 
 ## Задание 1:
 
