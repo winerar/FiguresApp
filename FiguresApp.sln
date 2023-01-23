@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiguresApp", "FiguresApp\FiguresApp.csproj", "{3935312A-A6E8-45A6-A8CF-366E698A63D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figures", "Figures\Figures.csproj", "{1E92BCB5-8445-497C-BAE7-9C737083E25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureTests", "FigureTest\FigureTests.csproj", "{0C786C21-FE0A-41CA-856C-9B2B2A745252}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3935312A-A6E8-45A6-A8CF-366E698A63D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3935312A-A6E8-45A6-A8CF-366E698A63D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3935312A-A6E8-45A6-A8CF-366E698A63D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3935312A-A6E8-45A6-A8CF-366E698A63D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E92BCB5-8445-497C-BAE7-9C737083E25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E92BCB5-8445-497C-BAE7-9C737083E25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E92BCB5-8445-497C-BAE7-9C737083E25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E92BCB5-8445-497C-BAE7-9C737083E25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C786C21-FE0A-41CA-856C-9B2B2A745252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C786C21-FE0A-41CA-856C-9B2B2A745252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C786C21-FE0A-41CA-856C-9B2B2A745252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C786C21-FE0A-41CA-856C-9B2B2A745252}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6F915A9-BBED-404B-9029-E72D461D6461}
+	EndGlobalSection
+EndGlobal
