@@ -15,3 +15,6 @@ Figures - библиотека с фигурами
 FigureTests - тесты
 
 FiguresApp - консольное приложение с демонстрацией
+
+[![Generic badge](https://img.shields.io/badge/.NET%20version-6.0-blue.svg?style=flat&logo=.NET)](https://shields.io/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/fe8a5fd502e7e53c812a/maintainability)](https://codeclimate.com/github/winerar/FiguresApp/maintainability)
