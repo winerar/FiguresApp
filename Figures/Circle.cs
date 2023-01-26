@@ -14,6 +14,11 @@ namespace Figures
             Radius = radius;
         }
 
+        public Circle()
+        {
+            Radius = 0;
+        }
+
         double radius;
         /// <summary>
         /// Must be non-negative
@@ -25,23 +30,12 @@ namespace Figures
             {
                 if (value < 0)
                 {
-                    radius = 0;
-                    return;
+                    throw new ArgumentOutOfRangeException(nameof(value), "Radius must be non-negative");
                 }
                 radius = value;
             }
         }
-        /// <summary>
-        /// Must be non-negative
-        /// </summary>
-        public double Diameter
-        {
-            get => radius * 2;
-            set
-            {
-                Radius = value / 2;
-            }
-        }
+        public double Diameter => radius * 2;
         /// <summary>
         /// Equals Radius^2 * PI
         /// </summary>

@@ -2,11 +2,17 @@
 {
     public class Triangle : Polygon
     {
-        public Triangle(double a, double b, double c) : base(3)
+        public Triangle(double a, double b, double c) : base(new double[]{ a, b, c })
         {
-            Sides[0] = a;
-            Sides[1] = b;
-            Sides[2] = c;
+            if (!TriangleIsValid(a, b, c))
+            {
+                throw new ArgumentException("Sum of two sides must be greater than third side");
+            }
+        }
+
+        private static bool TriangleIsValid(double a, double b, double c)
+        {
+            return a + b > c && a + c > b && b + c > a;
         }
 
         public double A => Sides[0];
