@@ -9,7 +9,9 @@ namespace FigureTests
         [ExpectedException(typeof(ArgumentNullException))]
         public void NullSides()
         {
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
             Polygon polygon = new(null);
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
         }
 
         [TestMethod]
