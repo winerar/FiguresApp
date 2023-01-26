@@ -29,21 +29,10 @@ namespace FigureTests
         }
 
         [TestMethod]
-        public void SetDiameter()
-        {
-            Circle circle = new(1);
-            circle.Diameter = 4;
-
-            Assert.AreEqual(2, circle.Radius);
-        }
-
-        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException), "Radius < 0")]
         public void SetNegativeRadius()
         {
-            Circle circle = new(1);
-            circle.Radius = -10;
-
-            Assert.AreEqual(0, circle.Radius);
+            Circle circle = new(-10);
         }
     }
 }

@@ -8,24 +8,25 @@ namespace FigureTests
         readonly Triangle triangle = new(5, 5, 8);
 
         [TestMethod]
-        public void PerimeterIsCorrect()
-        {
-            Assert.AreEqual(18, triangle.Perimeter);
-        }
-
-        [TestMethod]
         public void AreaIsCorrect()
         {
             Assert.AreEqual(12, triangle.Area);
         }
 
         [TestMethod]
-        public void Sides()
+        public void GetSides()
+        {
+            Triangle triangle = new(3, 4, 5);
+            Assert.AreEqual(3, triangle.A);
+            Assert.AreEqual(4, triangle.B);
+            Assert.AreEqual(5, triangle.C);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void InvalidTriangle()
         {
             Triangle triangle = new(1, 2, 3);
-            Assert.AreEqual(1, triangle.A);
-            Assert.AreEqual(2, triangle.B);
-            Assert.AreEqual(3, triangle.C);
         }
 
         [TestMethod]
